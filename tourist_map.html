@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vigan City</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Center the map container horizontally */
+        .map-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 400px; /* Adjust height as needed */
+            margin-top: 20px; /* Add margin to the top */
+            margin-bottom: 20px; /* Add margin to the bottom */
+        }
+
+        /* Style the map iframe */
+        .map-container iframe {
+            width: 80%; /* Adjust width as needed */
+            height: 100%; /* Adjust height as needed */
+            border: 1px solid #000;
+        }
+
+        /* Style the footer */
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #29166f;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">    
+    </div>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="history.html">History</a>
+        <div class="dropdown">
+            <button class="dropbtn">Tourism</button>
+            <div class="dropdown-content">
+                <a href="museums.html">Museums</a>
+                <a href="ancestral_houses.html">Ancestral Houses</a>
+                <a href="catholic_churches.html">Catholic Churches</a>
+                <a href="outdoors.html">Outdoors</a>
+                <a href="culture.html">Culture</a>
+                <a href="local_eats.html">Local Eats</a>
+            </div>
+        </div>
+        <a href="tourist_map.html">Tourist Map</a>
+        <a href="contact_us.html">Contact Us</a>
+    </nav>
+
+    <!-- Google Map container -->
+    <div class="map-container">
+        <iframe 
+            width="336" 
+            height="280" 
+            frameborder="0" 
+            scrolling="no" 
+            marginheight="0" 
+            marginwidth="0" 
+            src="https://www.google.com/maps/embed/v1/view?key=AIzaSyAJifc7pwvUkN0yrtn7BPn8I-lRg33PSNc&center=17.5747222,120.3869444&zoom=12&maptype=satellite" 
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <footer>
+        <p>@2023-2024 ITP4 | All Right Reserved</p>
+    </footer>
+</body>
+
+</html>
